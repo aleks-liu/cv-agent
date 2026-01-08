@@ -1,0 +1,186 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "cv_schema.json",
+  "title": "CV Data Schema",
+  "description": "Schema for CV data used by cv_generator.py and cv_editor.html",
+  "type": "object",
+  "required": ["name", "jobTitle"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Full name of the candidate"
+    },
+    "jobTitle": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Professional title (e.g., 'Product Security Engineer')"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number with country code"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Email address"
+    },
+    "linkedinUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "LinkedIn profile URL (optional)"
+    },
+    "profile": {
+      "type": "string",
+      "description": "Professional summary/profile section"
+    },
+    "workRights": {
+      "type": "string",
+      "description": "Work authorization status and location preferences"
+    },
+    "sectionLabels": {
+      "type": "object",
+      "description": "Custom labels for CV sections. Use \\n for line breaks.",
+      "properties": {
+        "profile": {
+          "type": "string",
+          "default": "Profile"
+        },
+        "workRights": {
+          "type": "string",
+          "default": "Work Rights"
+        },
+        "coreSkills": {
+          "type": "string",
+          "default": "Core Skills &\nTechnologies",
+          "description": "Use \\n for line break in label"
+        },
+        "employment": {
+          "type": "string",
+          "default": "Employment History"
+        },
+        "education": {
+          "type": "string",
+          "default": "Education"
+        },
+        "certifications": {
+          "type": "string",
+          "default": "Certifications"
+        }
+      },
+      "additionalProperties": false
+    },
+    "skills": {
+      "type": "array",
+      "description": "List of skill categories with descriptions",
+      "items": {
+        "type": "object",
+        "required": ["title"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Skill category name (e.g., 'Application Security')"
+          },
+          "description": {
+            "type": "string",
+            "description": "Technologies, tools, and concepts in this category"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "employment": {
+      "type": "array",
+      "description": "Employment history, most recent first",
+      "items": {
+        "type": "object",
+        "required": ["dates", "title", "company", "location"],
+        "properties": {
+          "dates": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Employment period (e.g., 'Aug 2024 — Present')"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Job title"
+          },
+          "company": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Company/organization name"
+          },
+          "location": {
+            "type": "string",
+            "minLength": 1,
+            "description": "City and country"
+          },
+          "duties": {
+            "type": "array",
+            "description": "List of responsibilities and achievements",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "education": {
+      "type": "array",
+      "description": "Educational background",
+      "items": {
+        "type": "object",
+        "required": ["year", "institution", "location", "degree"],
+        "properties": {
+          "year": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Graduation year"
+          },
+          "institution": {
+            "type": "string",
+            "minLength": 1,
+            "description": "University/school name"
+          },
+          "location": {
+            "type": "string",
+            "minLength": 1,
+            "description": "City and country"
+          },
+          "degree": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Degree and field of study"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "certifications": {
+      "type": "array",
+      "description": "Professional certifications",
+      "items": {
+        "type": "object",
+        "required": ["date", "name"],
+        "properties": {
+          "date": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Date obtained (e.g., 'Dec 2022')"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Certification name and issuing body"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

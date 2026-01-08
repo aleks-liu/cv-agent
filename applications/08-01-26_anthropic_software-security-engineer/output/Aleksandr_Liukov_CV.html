@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleksandr Liukov - Software Security Engineer</title>
+    <style>
+/* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* A4 Page Setup - margins controlled via @page for WeasyPrint */
+        @page {
+            size: A4 portrait;
+            margin: 18mm 15mm 15mm 15mm;
+        }
+
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            html, body {
+                width: 100%;
+                height: auto;
+                background: white !important;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background: none !important;
+                font-size: 10pt;
+            }
+
+            .cv-container {
+                width: 100%;
+                max-width: none;
+                min-height: auto;
+                padding: 0;
+                margin: 0;
+                background: white !important;
+                box-shadow: none !important;
+            }
+
+            .job-entry {
+                page-break-inside: avoid;
+            }
+
+            .cv-section {
+                page-break-inside: avoid;
+            }
+
+            .section-divider-full {
+                page-break-after: avoid;
+            }
+        }
+
+        /* Base Styles (apply to both screen and print) */
+        html {
+            font-size: 10pt;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #333;
+        }
+
+        .cv-container {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Screen Preview Styles (ignored by WeasyPrint) */
+        @media screen {
+            body {
+                background: #e0e0e0;
+            }
+
+            .cv-container {
+                width: 210mm;
+                min-height: 297mm;
+                margin: 20px auto;
+                padding: 18mm 15mm 15mm 15mm;
+                background: white;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            }
+        }
+
+        /* Header Styles */
+        .cv-header {
+            text-align: center;
+            margin-bottom: 10pt;
+        }
+
+        .cv-header h1 {
+            font-size: 14pt;
+            font-weight: normal;
+            color: #222;
+            margin-bottom: 3pt;
+            letter-spacing: 0.3px;
+        }
+
+        .cv-header .contact {
+            font-size: 9.5pt;
+            color: #333;
+        }
+
+        /* Section Dividers */
+        .section-divider {
+            border: none;
+            border-top: 0.75pt solid #999;
+            margin: 10pt 0;
+        }
+
+        .section-divider-full {
+            border: none;
+            border-top: 0.75pt solid #999;
+            margin: 12pt 0 10pt 0;
+        }
+
+        /* Two-Column Section Layout */
+        .cv-section {
+            display: table;
+            width: 100%;
+            margin-bottom: 8pt;
+            table-layout: fixed;
+        }
+
+        .section-label {
+            display: table-cell;
+            width: 140px;
+            min-width: 140px;
+            max-width: 140px;
+            padding-right: 18px;
+            font-size: 8pt;
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #444;
+            padding-top: 1pt;
+            line-height: 1.4;
+            vertical-align: top;
+        }
+
+        .section-content {
+            display: table-cell;
+            font-size: 8pt;
+            color: #333;
+            vertical-align: top;
+        }
+
+        .section-content p {
+            margin-bottom: 0;
+            text-align: left;
+            line-height: 1.35;
+        }
+
+        /* Links */
+        a {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        /* Skills Section */
+        .skill-group {
+            margin-bottom: 10pt;
+        }
+
+        .skill-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .skill-title {
+            font-weight: bold;
+            font-size: 9pt;
+            color: #222;
+            margin-bottom: 1pt;
+        }
+
+        .skill-description {
+            font-size: 8pt;
+            color: #333;
+            line-height: 1.4;
+        }
+
+        /* Employment History Section */
+        .employment-section {
+            display: block;
+        }
+
+        .job-entry {
+            display: table;
+            width: 100%;
+            margin-bottom: 10pt;
+            table-layout: fixed;
+        }
+
+        .job-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-date {
+            display: table-cell;
+            width: 140px;
+            min-width: 140px;
+            max-width: 140px;
+            padding-right: 18px;
+            font-size: 8pt;
+            color: #333;
+            vertical-align: top;
+        }
+
+        .job-main {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .job-header {
+            display: table;
+            width: 100%;
+            margin-bottom: 4pt;
+        }
+
+        .job-title-company {
+            display: table-cell;
+            font-size: 9pt;
+            color: #222;
+            text-align: left;
+        }
+
+        .job-title {
+            font-weight: bold;
+        }
+
+        .job-company {
+            font-weight: normal;
+        }
+
+        .job-location {
+            display: table-cell;
+            font-size: 9pt;
+            color: #333;
+            text-align: right;
+            white-space: nowrap;
+            padding-left: 10px;
+        }
+
+        .job-bullets {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .job-bullets li {
+            position: relative;
+            padding-left: 14px;
+            margin-bottom: 0;
+            font-size: 8pt;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        .job-bullets li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333;
+        }
+
+        /* Education Section */
+        .education-entry {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .education-year {
+            display: table-cell;
+            width: 140px;
+            min-width: 140px;
+            max-width: 140px;
+            padding-right: 18px;
+            font-size: 8pt;
+            color: #333;
+            vertical-align: top;
+        }
+
+        .education-main {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .education-header {
+            display: table;
+            width: 100%;
+            margin-bottom: 2pt;
+        }
+
+        .education-institution {
+            display: table-cell;
+            font-size: 9pt;
+            font-weight: bold;
+            color: #222;
+            text-align: left;
+        }
+
+        .education-location {
+            display: table-cell;
+            font-size: 9pt;
+            color: #333;
+            text-align: right;
+            white-space: nowrap;
+            padding-left: 10px;
+        }
+
+        .education-degree {
+            font-size: 8pt;
+            color: #333;
+        }
+
+        /* Certifications Section */
+        .cert-entry {
+            display: table;
+            width: 100%;
+            margin-bottom: 6pt;
+            table-layout: fixed;
+        }
+
+        .cert-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .cert-date {
+            display: table-cell;
+            width: 140px;
+            min-width: 140px;
+            max-width: 140px;
+            padding-right: 18px;
+            font-size: 8pt;
+            color: #333;
+            vertical-align: top;
+        }
+
+        .cert-name {
+            display: table-cell;
+            font-size: 8pt;
+            color: #333;
+            vertical-align: top;
+        }
+
+        /* Section Headers for Employment/Education/Certifications */
+        .section-header {
+            display: table;
+            width: 100%;
+            margin-bottom: 8pt;
+            table-layout: fixed;
+        }
+
+        .section-header .section-label {
+            display: table-cell;
+            width: 140px;
+            min-width: 140px;
+            max-width: 140px;
+            padding-right: 18px;
+            padding-top: 0;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Header -->
+        <header class="cv-header">
+            <h1>Aleksandr Liukov, Software Security Engineer</h1>
+            <p class="contact">+357 97 888 176 | liukov.aleksandr91@gmail.com | <a href="https://www.linkedin.com/in/aleksandr-liukov/?locale=en_US" target="_blank">LinkedIn</a></p>
+        </header>
+
+        <hr class="section-divider">
+
+        <!-- Profile -->
+        <section class="cv-section">
+            <div class="section-label">Profile</div>
+            <div class="section-content">
+                <p>Security engineer with 11 years of experience spanning IT infrastructure, DevSecOps, and platform security. Advocate for Infrastructure as Code, automating security controls across CI/CD pipelines and Kubernetes environments. Expertise in cloud security architecture, identity management, and container hardening. CISSP and OSCP certified. Builds AI-driven security tools for code analysis and vulnerability triage. Foundation in system administration enables practical understanding of how complex systems are built, deployed, and secured at scale.</p>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+        <!-- Work Rights -->
+        <section class="cv-section">
+            <div class="section-label">Work Rights</div>
+            <div class="section-content">
+                <p>Based in Cyprus. Open to relocation to London. Require employer-sponsored visa.</p>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+        <!-- Core Skills & Technologies -->
+        <section class="cv-section">
+            <div class="section-label">Core Skills &amp;<br>Technologies</div>
+            <div class="section-content">
+                <div class="skill-group">
+                    <div class="skill-title">Cloud &amp; Platform Security</div>
+                    <div class="skill-description">AWS, Microsoft Azure, multi-cloud architecture, IAM, network segmentation, encryption controls, cloud security posture</div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-title">Container Security</div>
+                    <div class="skill-description">Kubernetes, Docker, Kyverno, Falco, Seccomp, kubebench, container orchestration, security policy enforcement</div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-title">DevSecOps &amp; CI/CD Security</div>
+                    <div class="skill-description">Pipeline security, SAST, SCA, secrets scanning, GitOps workflows, secure SDLC, supply chain security</div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-title">Infrastructure as Code</div>
+                    <div class="skill-description">Terraform, Ansible, automated configuration management, policy enforcement, infrastructure automation</div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-title">Security Architecture</div>
+                    <div class="skill-description">Threat modeling, STRIDE, MITRE ATT&amp;CK, defense-in-depth, zero-trust principles, risk assessment</div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-title">Identity &amp; Access Management</div>
+                    <div class="skill-description">Active Directory, MFA, Microsoft Identity Manager, access control lifecycle, enterprise identity infrastructure</div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-title">Automation &amp; Development</div>
+                    <div class="skill-description">Python (advanced), Bash, PowerShell, Go, AI-assisted code analysis (Claude Code), security tooling development</div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-title">Security Operations</div>
+                    <div class="skill-description">Splunk, Humio/CrowdStrike, log analytics, alert correlation, DefectDojo, vulnerability management</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Employment History -->
+        <hr class="section-divider">
+        <div class="section-header">
+            <div class="section-label">Employment History</div>
+            <div></div>
+        </div>
+
+        <div class="employment-section">
+            <div class="job-entry">
+                <div class="job-date">Aug 2024 — Present</div>
+                <div class="job-main">
+                    <div class="job-header">
+                        <div class="job-title-company">
+                            <span class="job-title">Lead Product Security Engineer,</span>
+                            <span class="job-company"> Unlimit</span>
+                        </div>
+                        <div class="job-location">Cyprus</div>
+                    </div>
+                    <ul class="job-bullets">
+                        <li>Architect and deploy enterprise-wide security pipeline integrating SAST, SCA, and secrets scanning into CI/CD with automated findings ingestion and developer dashboards</li>
+                        <li>Engineer integrated vulnerability management system (DefectDojo + Python automation + Jira) consolidating findings from multiple scanners and automating remediation lifecycle</li>
+                        <li>Develop AI-driven tools using Claude Code to examine codebases for business logic vulnerabilities and automate triage of security scanner findings</li>
+                        <li>Conduct internal penetration testing and security assessments of web applications, APIs, and cloud infrastructure</li>
+                        <li>Perform security design reviews of software products and infrastructure architecture, advising engineering teams on risk mitigation</li>
+                        <li>Provide security subject matter expertise to product teams throughout the SDLC, embedding security into design decisions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-date">Apr 2023 — Aug 2024</div>
+                <div class="job-main">
+                    <div class="job-header">
+                        <div class="job-title-company">
+                            <span class="job-title">Information Security Architect,</span>
+                            <span class="job-company"> Kaspersky Lab</span>
+                        </div>
+                        <div class="job-location">Russia</div>
+                    </div>
+                    <ul class="job-bullets">
+                        <li>Define and document secure architecture principles for products and infrastructure, establishing security-by-design standards</li>
+                        <li>Evaluate product and system designs to identify security flaws and recommend remediation strategies</li>
+                        <li>Develop and implement Secure Software Development Lifecycle (SSDLC) processes across engineering teams</li>
+                        <li>Advise and guide engineering teams on mitigating risks and embedding security controls into architecture decisions</li>
+                        <li>Conduct targeted penetration testing of applications and services to validate security posture</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-date">Sep 2021 — Apr 2023</div>
+                <div class="job-main">
+                    <div class="job-header">
+                        <div class="job-title-company">
+                            <span class="job-title">Senior Cyber Security Engineer,</span>
+                            <span class="job-company"> TheSoul Publishing</span>
+                        </div>
+                        <div class="job-location">Cyprus</div>
+                    </div>
+                    <ul class="job-bullets">
+                        <li>Strengthen security of Kubernetes clusters and CI/CD pipelines, implementing container security policies and runtime protection</li>
+                        <li>Automate and maintain security controls through Infrastructure as Code: SAST, DAST deployments using Terraform and Ansible</li>
+                        <li>Develop secure remote access solution for corporate infrastructure with automated access controls, routing, and monitoring</li>
+                        <li>Manage SIEM platform, IDS, and vulnerability scanners with focus on alert optimization and actionable security intelligence</li>
+                        <li>Deploy container security tooling including Kyverno for policy enforcement and Falco for runtime threat detection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-date">Jan 2020 — Sep 2021</div>
+                <div class="job-main">
+                    <div class="job-header">
+                        <div class="job-title-company">
+                            <span class="job-title">Information Security Engineer,</span>
+                            <span class="job-company"> Vkontakte</span>
+                        </div>
+                        <div class="job-location">Russia</div>
+                    </div>
+                    <ul class="job-bullets">
+                        <li>Develop and maintain internal security tools and automation scripts (Python) to streamline operations and enforce controls at scale</li>
+                        <li>Manage SIEM platforms (Splunk, Humio) and configure log processing pipelines (Logstash) for enterprise monitoring</li>
+                        <li>Prepare and deploy log collection agents (winlogbeat, sysmon, osquery) across corporate infrastructure</li>
+                        <li>Develop complex correlation queries transforming high-volume raw log data into actionable security alerts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-date">Aug 2018 — Jan 2020</div>
+                <div class="job-main">
+                    <div class="job-header">
+                        <div class="job-title-company">
+                            <span class="job-title">System Integration Specialist,</span>
+                            <span class="job-company"> Positive Technologies</span>
+                        </div>
+                        <div class="job-location">Russia</div>
+                    </div>
+                    <ul class="job-bullets">
+                        <li>Deploy and configure security products across customer environments including OS hardening and network encryption appliances</li>
+                        <li>Create automation scripts (Python, Bash) for repeatable installation, configuration, and integration of security solutions</li>
+                        <li>Develop automated attack simulations to test and validate detection capabilities during integration projects</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-date">Nov 2016 — Jul 2018</div>
+                <div class="job-main">
+                    <div class="job-header">
+                        <div class="job-title-company">
+                            <span class="job-title">Security Engineer / IT Engineer,</span>
+                            <span class="job-company"> GDC (Fujitsu preferred supplier)</span>
+                        </div>
+                        <div class="job-location">Russia</div>
+                    </div>
+                    <ul class="job-bullets">
+                        <li>Administer enterprise identity infrastructure (Active Directory, MFA, Microsoft Identity Manager) and manage access control lifecycle</li>
+                        <li>Investigate security alerts using Splunk and endpoint protection systems, assess change requests for security impact</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-date">Jan 2015 — Oct 2016</div>
+                <div class="job-main">
+                    <div class="job-header">
+                        <div class="job-title-company">
+                            <span class="job-title">System Administrator,</span>
+                            <span class="job-company"> Atos IT Solutions &amp; Services</span>
+                        </div>
+                        <div class="job-location">Russia</div>
+                    </div>
+                    <ul class="job-bullets">
+                        <li>Maintain enterprise Windows Server infrastructure, VMware vCenter, and IBM WebSphere with system monitoring and patching</li>
+                        <li>Automate identity management workflows and maintenance tasks using PowerShell</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <hr class="section-divider">
+        <div class="section-header">
+            <div class="section-label">Certifications</div>
+            <div></div>
+        </div>
+
+        <div class="cert-entry">
+            <div class="cert-date">2022</div>
+            <div class="cert-name">CISSP (Certified Information Systems Security Professional) — (ISC)²</div>
+        </div>
+
+        <div class="cert-entry">
+            <div class="cert-date">2020</div>
+            <div class="cert-name">OSCP (Offensive Security Certified Professional) — Offensive Security</div>
+        </div>
+
+        <div class="cert-entry">
+            <div class="cert-date">2017</div>
+            <div class="cert-name">MCSE: Cloud Platform and Infrastructure — Microsoft</div>
+        </div>
+
+        <div class="cert-entry">
+            <div class="cert-date">2021</div>
+            <div class="cert-name">Splunk Certified User — Splunk</div>
+        </div>
+
+        <!-- Education -->
+        <hr class="section-divider">
+        <div class="section-header">
+            <div class="section-label">Education</div>
+            <div></div>
+        </div>
+
+        <div class="education-entry">
+            <div class="education-year">2014</div>
+            <div class="education-main">
+                <div class="education-header">
+                    <div class="education-institution">Voronezh State Technical University</div>
+                    <div class="education-location">Russia</div>
+                </div>
+                <div class="education-degree">Computer Systems &amp; Networks: Bachelor&#x27;s Degree (5-year Specialist program)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

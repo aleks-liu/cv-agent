@@ -1,0 +1,766 @@
+# =============================================================================
+# CV AGENT - COMPREHENSIVE PROFILE
+# =============================================================================
+# Aleksandr Liukov - Security Engineer
+# =============================================================================
+
+# =============================================================================
+# PERSONAL INFO
+# =============================================================================
+personal:
+  name: "Aleksandr Liukov"
+  title: "Product Security Engineer"
+  email: "liukov.aleksandr91@gmail.com"
+  phone: "+375 97 888 176"
+  location: "Limassol, Cyprus"
+  linkedin: "https://www.linkedin.com/in/aleksandr-liukov/?locale=en_US"
+  github: ""                  # Fill in if you have one
+  website: ""                 # Fill in if you have one
+
+# =============================================================================
+# WORK AUTHORIZATION
+# =============================================================================
+work_rights:
+  current_status: "Based in Cyprus. Open to relocation."
+  visa_requirement: "Require employer-sponsored visa"
+
+# =============================================================================
+# SUMMARY BLOCKS
+# =============================================================================
+summary_blocks:
+  general: |
+    Security engineer with 11 years of experience across IT infrastructure, DevSecOps, and application security. Foundation in system administration provides comprehensive understanding of how systems are built, deployed, and attacked. Specializes in security architecture and design, translating threat landscapes into practical controls and working with engineering teams to embed security into the SDLC. OSCP and CISSP certified with hands-on penetration testing and vulnerability assessment experience. Strong advocate for Infrastructure as Code and automation-first approach to security.
+
+  soc_focus: |
+    Security engineer with 11 years of experience and deep expertise in security operations and monitoring. Established enterprise-wide monitoring infrastructure including log collection agent deployment (winlogbeat, sysmon, osquery), SIEM configuration (Splunk, Humio/CrowdStrike), and log processing pipelines (Logstash). Developed complex correlation queries transforming raw log data into actionable security alerts. CISSP certified with strong automation skills for scalable security operations.
+
+  appsec_focus: |
+    Security engineer with 11 years of experience specializing in application security and secure SDLC. Architects and deploys enterprise security pipelines integrating SAST, SCA, and secrets scanning into CI/CD workflows. Conducts security design reviews, threat modeling, and penetration testing of web applications and APIs. OSCP certified with hands-on offensive security experience. Develops and enforces application security requirements for software products.
+
+  devsecops_focus: |
+    Security engineer with 11 years of experience and strong DevSecOps focus. Advocate for Everything as Code approach — automating security controls, checks, and workflows through Python scripts and IaC configurations. Integrates security tooling into CI/CD pipelines, deploys container security controls in Kubernetes environments, and builds automated vulnerability management systems. Foundation in system administration combined with development skills enables bridging security and engineering teams.
+
+  infrastructure_focus: |
+    Security engineer with 11 years of experience rooted in IT infrastructure and system administration. Expertise in operating system hardening, identity management (Active Directory, IAM), network security, and enterprise infrastructure security. Deployed and configured security products across customer environments including network encryption appliances. Strong automation skills with PowerShell and Python for infrastructure security tasks.
+
+  cloud_focus: |
+    # Fill in with cloud-specific summary when needed
+
+  leadership_focus: |
+    # Fill in with leadership-specific summary when needed
+
+# =============================================================================
+# SKILLS
+# =============================================================================
+skills:
+  # ---------------------------------------------------------------------------
+  # SECURITY DOMAINS
+  # ---------------------------------------------------------------------------
+  security_domains:
+    - name: "Security Architecture & Design"
+      level: "advanced"
+      years: 0                # Fill in
+      keywords:
+        - "Defense-in-depth"
+        - "Zero-trust principles"
+        - "Threat Modeling"
+        - "STRIDE"
+        - "MITRE ATT&CK"
+        - "Cloud Security Architecture"
+        - "Identity & Access Management"
+        - "Risk Assessment"
+      highlight_for:
+        - security_architect
+        - security_engineer
+        - staff_security
+
+    - name: "Application Security"
+      level: "advanced"
+      years: 0                # Fill in
+      keywords:
+        - "SSDLC"
+        - "SCA"
+        - "SAST"
+        - "DAST"
+        - "OWASP ZAP"
+        - "Burp Suite"
+        - "WAF"
+        - "ModSecurity"
+        - "OWASP ASVS"
+      highlight_for:
+        - appsec
+        - product_security
+        - devsecops
+
+    - name: "Vulnerability Management"
+      level: "advanced"
+      years: 0                # Fill in
+      keywords:
+        - "Identification"
+        - "Triage"
+        - "Remediation workflows"
+        - "False-positive reduction"
+        - "Qualys"
+        - "Nessus"
+        - "DefectDojo"
+      highlight_for:
+        - security_engineer
+        - appsec
+        - soc
+
+    - name: "Security Operations & Monitoring"
+      level: "advanced"
+      years: 0                # Fill in
+      keywords:
+        - "SIEM"
+        - "Splunk"
+        - "Humio"
+        - "CrowdStrike"
+        - "Log analytics"
+        - "Alert correlation"
+        - "Security monitoring"
+        - "Logstash"
+        - "winlogbeat"
+        - "sysmon"
+        - "osquery"
+      highlight_for:
+        - soc
+        - incident_response
+        - blue_team
+
+    - name: "Penetration Testing"
+      level: "intermediate"
+      years: 0                # Fill in
+      keywords:
+        - "Web application testing"
+        - "API testing"
+        - "Infrastructure testing"
+        - "OSCP"
+      highlight_for:
+        - pentesting
+        - appsec
+        - red_team
+
+    - name: "Cyber Security Risk"
+      level: "advanced"
+      years: 0                # Fill in
+      keywords:
+        - "Risk Assessment"
+        - "Risk Mitigation"
+        - "Security Controls"
+        - "Compliance"
+      highlight_for:
+        - security_architect
+        - grc
+        - security_leadership
+
+  # ---------------------------------------------------------------------------
+  # TECHNOLOGIES
+  # ---------------------------------------------------------------------------
+  technologies:
+    - name: "Python"
+      category: "Programming"
+      level: "advanced"
+      years: 0                # Fill in
+      context: "Security automation, tooling, scripts for security controls and workflows"
+      services: []
+      certifications: []
+
+    - name: "Bash"
+      category: "Programming"
+      level: "advanced"
+      years: 0                # Fill in
+      context: "Automation scripts, system administration"
+      services: []
+      certifications: []
+
+    - name: "PowerShell"
+      category: "Programming"
+      level: "intermediate"
+      years: 0                # Fill in
+      context: "Windows automation, Active Directory management"
+      services: []
+      certifications: []
+
+    - name: "Go"
+      category: "Programming"
+      level: "beginner"
+      years: 0                # Fill in - noted as "learning" in CV
+      context: "Learning"
+      services: []
+      certifications: []
+
+    - name: "Terraform"
+      category: "IaC"
+      level: "intermediate"
+      years: 0                # Fill in
+      context: "Infrastructure as Code deployments"
+      services: []
+      certifications: []
+
+    - name: "Ansible"
+      category: "IaC"
+      level: "intermediate"
+      years: 0                # Fill in
+      context: "Configuration management, automated deployments"
+      services: []
+      certifications: []
+
+    - name: "Docker"
+      category: "Container"
+      level: "advanced"
+      years: 0                # Fill in
+      context: "Container security"
+      services: []
+      certifications: []
+
+    - name: "Kubernetes"
+      category: "Container"
+      level: "advanced"
+      years: 0                # Fill in
+      context: "Container security, policy enforcement"
+      services:
+        - "Kyverno"
+        - "Falco"
+        - "Seccomp"
+        - "kubebench"
+      certifications: []
+
+    - name: "AWS"
+      category: "Cloud"
+      level: "intermediate"
+      years: 0                # Fill in
+      context: "Cloud security"
+      services: []            # Fill in specific services
+      certifications: []
+
+    - name: "Splunk"
+      category: "SIEM"
+      level: "advanced"
+      years: 0                # Fill in
+      context: "SIEM platform management, complex correlation queries, alert optimization"
+      services: []
+      certifications: ["Splunk Certified User"]
+
+    - name: "Microsoft Azure"
+      category: "Cloud"
+      level: "intermediate"
+      years: 0                # Fill in
+      context: "Cloud infrastructure, Azure administration"
+      services: []
+      certifications: ["Implementing Microsoft Azure Infrastructure Solutions"]
+
+    - name: "Humio/CrowdStrike"
+      category: "SIEM"
+      level: "advanced"
+      years: 0                # Fill in
+      context: "Log analytics, security monitoring"
+      services: []
+      certifications: []
+
+    - name: "DefectDojo"
+      category: "AppSec"
+      level: "advanced"
+      years: 0                # Fill in
+      context: "Vulnerability management, findings consolidation"
+      services: []
+      certifications: []
+
+    - name: "Burp Suite"
+      category: "AppSec"
+      level: "intermediate"
+      years: 0                # Fill in
+      context: "Web application security testing"
+      services: []
+      certifications: []
+
+    - name: "OWASP ZAP"
+      category: "AppSec"
+      level: "intermediate"
+      years: 0                # Fill in
+      context: "DAST scanning"
+      services: []
+      certifications: []
+
+    - name: "Active Directory"
+      category: "Identity"
+      level: "advanced"
+      years: 0                # Fill in
+      context: "Enterprise identity infrastructure, access control lifecycle"
+      services:
+        - "MFA"
+        - "Microsoft Identity Manager"
+        - "DNS"
+        - "DHCP"
+        - "Group Policy"
+      certifications: []
+
+    - name: "Claude Code/Gemini"
+      category: "AI"
+      level: "advanced"
+      years: 0                # Fill in
+      context: "AI-assisted source code analysis, AI-driven security automation, MCP servers"
+      services: []
+      certifications: []
+
+  # ---------------------------------------------------------------------------
+  # METHODOLOGIES & FRAMEWORKS
+  # ---------------------------------------------------------------------------
+  methodologies:
+    - "OWASP ASVS"
+    - "MITRE ATT&CK"
+    - "CIS Controls"
+    - "Defense-in-depth"
+    - "Zero-trust"
+    - "Infrastructure as Code"
+    - "Everything as Code"
+    - "DevSecOps"
+
+# =============================================================================
+# WORK EXPERIENCE
+# =============================================================================
+work_experience:
+  - company: "Unlimit"
+    role: "Lead Product Security Engineer"
+    employment_type: "full-time"
+    start_date: "2024-08"
+    end_date: "present"
+    location: "Limassol, Cyprus"
+    relevant_for:
+      - appsec
+      - product_security
+      - devsecops
+      - security_architect
+    summary: |
+      Leading product security engineering, building vulnerability management systems and security pipelines.
+    achievements:
+      - text: "Engineer integrated vulnerability management system (DefectDojo + custom Python automation + Jira) that consolidates security findings from multiple scanners and automates findings lifecycle"
+        impact: ""
+        relevant_for: [appsec, devsecops, security_engineer]
+        technologies: [Python, DefectDojo, Jira]
+      - text: "Develop AI-driven tools to examine codebases for business logic vulnerabilities and triage findings from security scanners"
+        impact: ""
+        relevant_for: [appsec, product_security]
+        technologies: [Python, AI]
+      - text: "Architect and deploy enterprise-wide security pipeline integrating SAST, SCA, and secrets scanning into CI/CD, with automated findings ingestion to DefectDojo and developer-facing dashboards for actionable remediation"
+        impact: ""
+        relevant_for: [devsecops, appsec, security_architect]
+        technologies: [SAST, SCA, CI/CD, DefectDojo]
+      - text: "Conduct internal application penetration testing and security assessments of web applications, APIs, and infrastructure"
+        impact: ""
+        relevant_for: [pentesting, appsec]
+        technologies: [Burp Suite, OWASP ZAP]
+      - text: "Perform security design reviews of company software products and IT infrastructure architecture"
+        impact: ""
+        relevant_for: [security_architect, appsec]
+        technologies: []
+      - text: "Develop, maintain and enforce application security requirements for in-house software products"
+        impact: ""
+        relevant_for: [appsec, product_security]
+        technologies: []
+      - text: "Provide security subject matter expertise to product teams throughout the SDLC"
+        impact: ""
+        relevant_for: [appsec, product_security, security_architect]
+        technologies: []
+    narrative: |
+
+  - company: "Kaspersky Lab"
+    role: "Information Security Architect"
+    employment_type: "full-time"
+    start_date: "2023-04"
+    end_date: "2024-08"
+    location: "Saint Petersburg, Russia"
+    relevant_for:
+      - security_architect
+      - appsec
+      - pentesting
+    summary: |
+      Defined secure architecture principles and evaluated product designs for security flaws.
+    achievements:
+      - text: "Defined and documented secure architecture principles for products and infrastructure"
+        impact: ""
+        relevant_for: [security_architect]
+        technologies: []
+      - text: "Evaluated product and system designs to identify security flaws and recommend remediation strategies"
+        impact: ""
+        relevant_for: [security_architect, appsec]
+        technologies: []
+      - text: "Advised and guided engineering teams on mitigating risks and embedding security into design decisions"
+        impact: ""
+        relevant_for: [security_architect, appsec]
+        technologies: []
+      - text: "Conducted targeted penetration testing of applications and services"
+        impact: ""
+        relevant_for: [pentesting, appsec]
+        technologies: []
+      - text: "Developed and implemented Secure Software Development Lifecycle (SSDLC) processes"
+        impact: ""
+        relevant_for: [appsec, devsecops]
+        technologies: []
+      - text: "Provided expert advice on product security to stakeholders"
+        impact: ""
+        relevant_for: [security_architect, product_security]
+        technologies: []
+    narrative: |
+
+  - company: "TheSoul Publishing"
+    role: "Senior Cyber Security Engineer"
+    employment_type: "full-time"
+    start_date: "2021-09"
+    end_date: "2023-04"
+    location: "Limassol, Cyprus"
+    relevant_for:
+      - devsecops
+      - cloud_security
+      - infrastructure
+    summary: |
+      Automated security controls and strengthened Kubernetes and CI/CD pipeline security.
+    achievements:
+      - text: "Automated and maintained security controls: SAST, DAST, and IaC-based deployments"
+        impact: ""
+        relevant_for: [devsecops, appsec]
+        technologies: [SAST, DAST, IaC, Terraform, Ansible]
+      - text: "Strengthened security of Kubernetes clusters and CI/CD pipelines"
+        impact: ""
+        relevant_for: [devsecops, cloud_security, platform_security]
+        technologies: [Kubernetes, CI/CD]
+      - text: "Developed a secure remote access solution for corporate infrastructure with automated access controls, routing and monitoring"
+        impact: ""
+        relevant_for: [infrastructure, network_security]
+        technologies: []
+      - text: "Managed SIEM, IDS, vulnerability scanners, and alerting"
+        impact: ""
+        relevant_for: [soc, security_engineer]
+        technologies: [SIEM]
+    narrative: |
+
+  - company: "Vkontakte"
+    role: "Information Security Engineer"
+    employment_type: "full-time"
+    start_date: "2020-01"
+    end_date: "2021-09"
+    location: "Saint Petersburg, Russia"
+    relevant_for:
+      - soc
+      - security_engineer
+      - devsecops
+    summary: |
+      Established enterprise monitoring infrastructure and developed security automation.
+    achievements:
+      - text: "Developed and maintained internal security tools and automation scripts (Python) to streamline security operations and enforce security controls"
+        impact: ""
+        relevant_for: [devsecops, security_engineer]
+        technologies: [Python]
+      - text: "Managed SIEM platform (Splunk), vulnerability scanners, and IDS with focus on alert optimization and false positive reduction"
+        impact: ""
+        relevant_for: [soc, security_engineer]
+        technologies: [Splunk]
+      - text: "Designed and executed security awareness program including phishing simulation campaigns to educate employees on social engineering threats"
+        impact: ""
+        relevant_for: [security_engineer, grc]
+        technologies: []
+      - text: "Investigated security alerts and suspicious activities through log analysis, identifying legitimate threats and tuning detection rules"
+        impact: ""
+        relevant_for: [soc, incident_response]
+        technologies: [Splunk]
+      - text: "Prepared log collection agents configuration (winlogbeat, sysmon, osquery) and initiated their mass deployment to corporate hosts"
+        impact: ""
+        relevant_for: [soc, infrastructure]
+        technologies: [winlogbeat, sysmon, osquery]
+      - text: "Configured SIEM (Splunk, Humio) and intermediate log processor (Logstash) for enterprise monitoring"
+        impact: ""
+        relevant_for: [soc]
+        technologies: [Splunk, Humio, Logstash]
+      - text: "Developed complex search queries correlating log events from different sources and performing data transformations to generate meaningful alerts from raw data"
+        impact: ""
+        relevant_for: [soc, incident_response]
+        technologies: [Splunk, Humio]
+    narrative: |
+      Extensive experience establishing monitoring infrastructure from ground up. Deployed log collection agents across corporate hosts, configured SIEM platforms and log processing pipelines. Developed sophisticated correlation queries that transformed high-volume raw log data into actionable security alerts.
+
+  - company: "Positive Technologies"
+    role: "System integration team specialist"
+    employment_type: "full-time"
+    start_date: "2018-08"
+    end_date: "2020-01"
+    location: "Moscow, Russia"
+    relevant_for:
+      - security_engineer
+      - infrastructure
+      - pentesting
+    summary: |
+      Deployed security products and developed automated attack simulations for testing detection capabilities.
+    achievements:
+      - text: "Developed automated attack simulations to test and validate detection capabilities of cybersecurity solutions during integration projects"
+        impact: ""
+        relevant_for: [pentesting, red_team]
+        technologies: [Python]
+      - text: "Deployed and configured security products across customer environments, including OS hardening, software installation, and network encryption appliances"
+        impact: ""
+        relevant_for: [infrastructure, security_engineer]
+        technologies: []
+      - text: "Created automation scripts (Python, Bash) for repeatable installation, configuration, and integration of security solutions"
+        impact: ""
+        relevant_for: [devsecops, infrastructure]
+        technologies: [Python, Bash]
+      - text: "Configured servers, network equipment, and infrastructure for security solution deployments"
+        impact: ""
+        relevant_for: [infrastructure, network_security]
+        technologies: []
+    narrative: |
+
+  - company: "GDC (Fujitsu preferred supplier of Services)"
+    role: "Security Engineer"
+    employment_type: "full-time"
+    start_date: "2017-11"
+    end_date: "2018-07"
+    location: "Voronezh, Russia"
+    relevant_for:
+      - security_engineer
+      - soc
+      - infrastructure
+    summary: |
+      Administered MFA solution and investigated security alerts.
+    achievements:
+      - text: "Administered MFA solution including managing user-issued token lifecycle"
+        impact: ""
+        relevant_for: [infrastructure, security_engineer]
+        technologies: [MFA]
+      - text: "Assessed Change Requests from security perspective"
+        impact: ""
+        relevant_for: [security_engineer, grc]
+        technologies: []
+      - text: "Researched, tested, and evaluated IDM systems to determine a solution that meets requirements"
+        impact: ""
+        relevant_for: [infrastructure, security_engineer]
+        technologies: [IDM]
+      - text: "Investigated alerts from Cyber Security systems"
+        impact: ""
+        relevant_for: [soc, incident_response]
+        technologies: []
+    narrative: |
+
+  - company: "GDC (Fujitsu preferred supplier of Services)"
+    role: "IT Engineer"
+    employment_type: "full-time"
+    start_date: "2016-10"
+    end_date: "2017-11"
+    location: "Voronezh, Russia"
+    relevant_for:
+      - infrastructure
+      - soc
+      - cloud_security
+    summary: |
+      Administered enterprise identity infrastructure and investigated security alerts.
+    achievements:
+      - text: "Administered enterprise identity infrastructure (Active Directory, MFA, Microsoft Identity Manager) and managed access control lifecycle"
+        impact: ""
+        relevant_for: [infrastructure, security_engineer]
+        technologies: [Active Directory, MFA, Microsoft Identity Manager]
+      - text: "Assessed change requests for security impact and investigated security alerts using Splunk and endpoint protection systems"
+        impact: ""
+        relevant_for: [soc, security_engineer]
+        technologies: [Splunk]
+      - text: "Managed Microsoft Active Directory Domain Services infrastructure, DNS, DHCP, and network policy services with PowerShell automation"
+        impact: ""
+        relevant_for: [infrastructure]
+        technologies: [Active Directory, PowerShell, DNS, DHCP]
+      - text: "Administered and maintained Microsoft Azure environment"
+        impact: ""
+        relevant_for: [infrastructure, cloud_security]
+        technologies: [Microsoft Azure]
+    narrative: |
+
+  - company: "Atos IT Solutions & Services"
+    role: "System administrator"
+    employment_type: "full-time"
+    start_date: "2016-01"
+    end_date: "2016-10"
+    location: "Voronezh, Russia"
+    relevant_for:
+      - infrastructure
+    summary: |
+      Maintained enterprise Windows Server infrastructure with automation.
+    achievements:
+      - text: "Maintained enterprise Windows Server infrastructure, VMware vCenter, and IBM WebSphere environments with system monitoring and patching"
+        impact: ""
+        relevant_for: [infrastructure]
+        technologies: [Windows Server, VMware, IBM WebSphere]
+      - text: "Automated tasks using PowerShell for maintenance and identity management workflows"
+        impact: ""
+        relevant_for: [infrastructure, devsecops]
+        technologies: [PowerShell]
+      - text: "Administered SCCM and WSUS for enterprise patch management and software distribution"
+        impact: ""
+        relevant_for: [infrastructure]
+        technologies: [SCCM, WSUS]
+      - text: "Managed user lifecycle and provided technical support services"
+        impact: ""
+        relevant_for: [infrastructure]
+        technologies: []
+      - text: "Technical support for customer server infrastructure including night duties (monitoring and responding to alerts)"
+        impact: ""
+        relevant_for: [infrastructure, soc]
+        technologies: []
+    narrative: |
+
+  - company: "Atos IT Solutions & Services"
+    role: "Service desk engineer"
+    employment_type: "full-time"
+    start_date: "2015-06"
+    end_date: "2015-12"
+    location: "Voronezh, Russia"
+    relevant_for:
+      - infrastructure
+    summary: |
+      Coordinated field engineers and administered endpoint management systems.
+    achievements:
+      - text: "Coordinated work activity of field engineers"
+        impact: ""
+        relevant_for: [infrastructure]
+        technologies: []
+      - text: "Administered Microsoft SCCM: creation, distribution and installation of packages on customer computers"
+        impact: ""
+        relevant_for: [infrastructure]
+        technologies: [SCCM]
+      - text: "Administered WSUS server for patch management"
+        impact: ""
+        relevant_for: [infrastructure]
+        technologies: [WSUS]
+      - text: "Managed AD accounts lifecycle"
+        impact: ""
+        relevant_for: [infrastructure]
+        technologies: [Active Directory]
+      - text: "Automated routine tasks through PowerShell scripting"
+        impact: ""
+        relevant_for: [infrastructure, devsecops]
+        technologies: [PowerShell]
+      - text: "Processed Service Requests and Incidents in ITSM tool"
+        impact: ""
+        relevant_for: [infrastructure]
+        technologies: []
+    narrative: |
+
+# =============================================================================
+# EDUCATION
+# =============================================================================
+education:
+  - degree: "Computer Systems & Networks: Bachelor's Degree (5-year Specialist program)"
+    institution: "Voronezh State Technical University"
+    location: "Voronezh, Russia"
+    year: 2014
+    relevant_coursework: []   # Fill in if relevant
+
+# =============================================================================
+# CERTIFICATIONS
+# =============================================================================
+certifications:
+  - name: "CISSP (Certified Information Systems Security Professional)"
+    short_name: "CISSP"
+    issuer: "(ISC)²"
+    year: 2022
+    expires: 0                # Fill in if applicable
+    relevant_for:
+      - security_engineer
+      - security_architect
+      - security_leadership
+      - grc
+    priority: 1
+
+  - name: "OSCP (Offensive Security Certified Professional)"
+    short_name: "OSCP"
+    issuer: "Offensive Security"
+    year: 2020
+    expires: 0
+    relevant_for:
+      - pentesting
+      - appsec
+      - security_engineer
+      - red_team
+    priority: 1
+
+  - name: "MCSE: Cloud Platform and Infrastructure"
+    short_name: "MCSE"
+    issuer: "Microsoft"
+    year: 2017
+    expires: 0                # Fill in if applicable
+    relevant_for:
+      - security_engineer
+      - security_architect
+      - security_leadership
+      - cloud_security
+    priority: 2
+
+  - name: "Exam 533: Implementing Microsoft Azure Infrastructure Solution"
+    short_name: ""
+    issuer: "Microsoft"
+    year: 2017
+    expires: 0
+    relevant_for:
+      - infrastructure
+      - security_engineer
+      - cloud_security
+    priority: 3
+
+  - name: "Splunk Certified User"
+    short_name: ""
+    issuer: "Splunk"
+    year: 0                   # Fill in year
+    expires: 0
+    relevant_for:
+      - soc
+      - security_engineer
+      - incident_response
+    priority: 2
+
+# =============================================================================
+# LANGUAGES
+# =============================================================================
+languages:
+  - language: "Russian"
+    level: "Native"
+  - language: "English"
+    level: "Professional"                 # Fill in: Fluent | Professional | etc.
+
+# =============================================================================
+# ADDITIONAL (Optional)
+# =============================================================================
+additional:
+  publications: []
+  speaking: []
+  open_source: []
+  volunteer: []
+
+# =============================================================================
+# PERSONAL TRAITS (for cover letter context)
+# =============================================================================
+traits:
+  - "Strong advocate for Infrastructure as Code and Everything as Code approach"
+  - "Automation-first mindset - automates processes when it makes sense"
+  - "Team player who can also take end-to-end ownership of tasks"
+  - "Extensive experience writing Python scripts for security controls and workflows"
+
+# =============================================================================
+# POSITION TYPE TAGS REFERENCE
+# =============================================================================
+# | Tag                  | Description                                    |
+# |----------------------|------------------------------------------------|
+# | appsec               | Application Security                           |
+# | product_security     | Product Security                               |
+# | security_architect   | Security Architect                             |
+# | security_engineer    | General Security Engineer                      |
+# | staff_security       | Staff/Principal Security                       |
+# | soc                  | SOC Analyst/Engineer                           |
+# | incident_response    | Incident Response                              |
+# | threat_intel         | Threat Intelligence                            |
+# | devsecops            | DevSecOps                                      |
+# | platform_security    | Platform Security                              |
+# | cloud_security       | Cloud Security                                 |
+# | infrastructure       | Infrastructure Security                        |
+# | network_security     | Network Security                               |
+# | pentesting           | Penetration Testing                            |
+# | red_team             | Red Team                                       |
+# | blue_team            | Blue Team                                      |
+# | grc                  | Governance, Risk, Compliance                   |
+# | security_leadership  | Security Manager/Director                      |
+# =============================================================================
