@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
 """
-CV Generator - Generates HTML CV from JSON data.
+CV Generator (Compact Skills) - Generates HTML CV from JSON data.
 
-This script reads a JSON file containing CV data and generates an HTML file
-that matches the output of the CV Editor web interface. The generated HTML
-is optimized for PDF conversion using WeasyPrint.
+This version uses an inline format for skills:
+  **Skill Title:** Description text on same line
 
-Usage:
-    python cv_generator.py cv_template.json
-    python cv_generator.py cv_template.json -o output.html
-    python cv_generator.py cv_template.json --stdout
-    python cv_generator.py cv_template.json --validate-only
+This reduces vertical space in the Core Skills section.
 """
 
 import argparse
@@ -43,7 +38,7 @@ DEFAULT_LABELS = {
     "certifications": "Certifications"
 }
 
-# Complete CSS template matching cv_editor.html
+# Complete CSS template - COMPACT SKILLS VERSION
 CSS_TEMPLATE = """/* Reset and Base Styles */
         * {
             margin: 0;
@@ -212,26 +207,26 @@ CSS_TEMPLATE = """/* Reset and Base Styles */
             text-decoration: none;
         }
 
-        /* Skills Section */
-        .skill-group {
-            margin-bottom: 10pt;
+        /* Skills Section - COMPACT INLINE FORMAT */
+        .skill-item {
+            margin-bottom: 4pt;
+            font-size: 8pt;
+            line-height: 1.4;
         }
 
-        .skill-group:last-child {
+        .skill-item:last-child {
             margin-bottom: 0;
         }
 
         .skill-title {
             font-weight: bold;
-            font-size: 9pt;
+            font-size: 8pt;
             color: #222;
-            margin-bottom: 1pt;
         }
 
         .skill-description {
             font-size: 8pt;
             color: #333;
-            line-height: 1.4;
         }
 
         /* Employment History Section */
@@ -598,7 +593,10 @@ def generate_work_rights(data: dict) -> str:
 
 
 def generate_skills(data: dict) -> str:
-    """Generate skills section HTML."""
+    """Generate skills section HTML - COMPACT INLINE FORMAT.
+
+    Format: **Title:** Description (all on same line)
+    """
     skills = get_list(data, "skills")
     if not skills:
         return ""
@@ -609,11 +607,11 @@ def generate_skills(data: dict) -> str:
     for skill in skills:
         title = escape_html(get_str(skill, "title"))
         description = escape_html(get_str(skill, "description"))
-        skills_html_parts.append(f"""
-                <div class="skill-group">
-                    <div class="skill-title">{title}</div>
-                    <div class="skill-description">{description}</div>
-                </div>""")
+        # COMPACT FORMAT: Title and description on same line with colon separator
+        skills_html_parts.append(
+            f'                <div class="skill-item"><span class="skill-title">{title}:</span> '
+            f'<span class="skill-description">{description}</span></div>'
+        )
 
     skills_html = "\n".join(skills_html_parts)
 
@@ -621,7 +619,8 @@ def generate_skills(data: dict) -> str:
         <!-- Core Skills & Technologies -->
         <section class="cv-section">
             <div class="section-label">{label}</div>
-            <div class="section-content">{skills_html}
+            <div class="section-content">
+{skills_html}
             </div>
         </section>
 
@@ -805,14 +804,14 @@ def load_cv_data(filepath: Path) -> dict:
 def main() -> int:
     """Main entry point."""
     parser = argparse.ArgumentParser(
-        description="Generate HTML CV from JSON data",
+        description="Generate HTML CV from JSON data (compact skills format)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python cv_generator.py cv_template.json
-  python cv_generator.py cv_template.json -o my_cv.html
-  python cv_generator.py cv_template.json --stdout
-  python cv_generator.py cv_template.json --validate-only
+  python cv_html_builder_compact.py cv_template.json
+  python cv_html_builder_compact.py cv_template.json -o output.html
+  python cv_html_builder_compact.py cv_template.json --stdout
+  python cv_html_builder_compact.py cv_template.json --validate-only
         """
     )
     parser.add_argument(
