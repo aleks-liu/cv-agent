@@ -1,0 +1,140 @@
+{
+  "name": "Aleksandr Liukov",
+  "jobTitle": "Security Engineer",
+  "phone": "+375 97 888 176",
+  "email": "liukov.aleksandr91@gmail.com",
+  "linkedinUrl": "https://www.linkedin.com/in/aleksandr-liukov/?locale=en_US",
+  "profile": "Security engineer with 11 years of experience building security monitoring infrastructure and tooling. Architected enterprise log collection and processing pipelines using Splunk, Humio, and Logstash across high-scale environments. Developed detection logic through complex correlation queries that transform raw telemetry into actionable alerts. Builds Python-based security platforms and automation, including AI-driven tools for vulnerability analysis. CISSP and OSCP certified.",
+  "workRights": "Based in Cyprus. Open to relocation to San Francisco. Requires visa sponsorship.",
+  "sectionLabels": {
+    "profile": "Profile",
+    "workRights": "Work\nAuthorization",
+    "coreSkills": "Core Skills &\nTechnologies",
+    "employment": "Employment",
+    "education": "Education",
+    "certifications": "Certifications"
+  },
+  "skills": [
+    {
+      "title": "Security Data & Detection",
+      "description": "Splunk, Humio/CrowdStrike, Logstash, winlogbeat, sysmon, osquery, detection engineering, alert correlation, query optimization, log analytics"
+    },
+    {
+      "title": "Security Platform Development",
+      "description": "Python (9 years), security tooling, DefectDojo, CI/CD pipeline integration, SAST/SCA automation, API integration"
+    },
+    {
+      "title": "Infrastructure & Cloud",
+      "description": "AWS, Kubernetes (Kyverno, Falco, Seccomp), Docker, Terraform, Ansible, Linux/Windows server administration"
+    },
+    {
+      "title": "Security Domains",
+      "description": "Vulnerability management, threat modeling (STRIDE), MITRE ATT&CK, application security, incident response"
+    }
+  ],
+  "employment": [
+    {
+      "dates": "Aug 2024 — Present",
+      "title": "Lead Product Security Engineer",
+      "company": "Unlimit",
+      "location": "Cyprus",
+      "duties": [
+        "Engineer integrated vulnerability management platform (DefectDojo + Python automation + Jira) that consolidates findings from multiple scanners and automates remediation workflows",
+        "Develop AI-driven tools to examine codebases for business logic vulnerabilities and automate triage of security scanner findings",
+        "Architect enterprise-wide security pipeline integrating SAST, SCA, and secrets scanning into CI/CD with automated ingestion to centralized dashboard",
+        "Conduct security design reviews and penetration testing of web applications, APIs, and infrastructure"
+      ]
+    },
+    {
+      "dates": "Apr 2023 — Aug 2024",
+      "title": "Information Security Architect",
+      "company": "Kaspersky Lab",
+      "location": "Russia",
+      "duties": [
+        "Defined secure architecture principles for products and infrastructure with documented standards",
+        "Evaluated system designs to identify security flaws and developed remediation strategies",
+        "Developed and implemented Secure Software Development Lifecycle (SSDLC) processes"
+      ]
+    },
+    {
+      "dates": "Sep 2021 — Apr 2023",
+      "title": "Senior Cyber Security Engineer",
+      "company": "TheSoul Publishing",
+      "location": "Cyprus",
+      "duties": [
+        "Automated security controls deployment through IaC-based configurations (Terraform, Ansible)",
+        "Strengthened Kubernetes cluster security with policy enforcement (Kyverno) and runtime monitoring (Falco)",
+        "Managed SIEM, IDS, and vulnerability scanners with focus on alert optimization and noise reduction",
+        "Developed secure remote access solution with automated access controls and monitoring"
+      ]
+    },
+    {
+      "dates": "Jan 2020 — Sep 2021",
+      "title": "Information Security Engineer",
+      "company": "Vkontakte",
+      "location": "Russia",
+      "duties": [
+        "Configured SIEM platforms (Splunk, Humio) and log processing pipelines (Logstash) for enterprise-wide security monitoring",
+        "Deployed log collection agents (winlogbeat, sysmon, osquery) across corporate infrastructure with mass deployment automation",
+        "Developed complex correlation queries transforming multi-source log data into actionable security alerts with false positive reduction",
+        "Managed Splunk platform with focus on query optimization and alert tuning for high-volume environments",
+        "Built internal security automation tools (Python) to streamline operations and enforce security controls"
+      ]
+    },
+    {
+      "dates": "Aug 2018 — Jan 2020",
+      "title": "System Integration Specialist",
+      "company": "Positive Technologies",
+      "location": "Russia",
+      "duties": [
+        "Developed automated attack simulations (Python) to test and validate detection capabilities of security solutions",
+        "Created automation scripts for repeatable deployment and integration of security products across customer environments"
+      ]
+    },
+    {
+      "dates": "Oct 2016 — Jul 2018",
+      "title": "Security Engineer / IT Engineer",
+      "company": "GDC (Fujitsu)",
+      "location": "Russia",
+      "duties": [
+        "Administered enterprise identity infrastructure (Active Directory, MFA) and managed access control lifecycle",
+        "Investigated security alerts using Splunk and endpoint protection systems"
+      ]
+    },
+    {
+      "dates": "Jan 2016 — Oct 2016",
+      "title": "System Administrator",
+      "company": "Atos IT Solutions",
+      "location": "Russia",
+      "duties": [
+        "Maintained Windows Server infrastructure with PowerShell automation for patching and identity management"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "year": "2014",
+      "institution": "Voronezh State Technical University",
+      "location": "Russia",
+      "degree": "Computer Systems & Networks (5-year Specialist program)"
+    }
+  ],
+  "certifications": [
+    {
+      "date": "2022",
+      "name": "CISSP — Certified Information Systems Security Professional, (ISC)²"
+    },
+    {
+      "date": "2020",
+      "name": "OSCP — Offensive Security Certified Professional"
+    },
+    {
+      "date": "2018",
+      "name": "Splunk Certified User"
+    },
+    {
+      "date": "2017",
+      "name": "MCSE: Cloud Platform and Infrastructure, Microsoft"
+    }
+  ]
+}

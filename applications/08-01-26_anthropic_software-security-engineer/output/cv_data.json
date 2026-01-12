@@ -4,7 +4,7 @@
   "phone": "+357 97 888 176",
   "email": "liukov.aleksandr91@gmail.com",
   "linkedinUrl": "https://www.linkedin.com/in/aleksandr-liukov/?locale=en_US",
-  "profile": "Security engineer with 11 years of experience spanning IT infrastructure, DevSecOps, and platform security. Advocate for Infrastructure as Code, automating security controls across CI/CD pipelines and Kubernetes environments. Expertise in cloud security architecture, identity management, and container hardening. CISSP and OSCP certified. Builds AI-driven security tools for code analysis and vulnerability triage. Foundation in system administration enables practical understanding of how complex systems are built, deployed, and secured at scale.",
+  "profile": "Security engineer with 11 years of experience rooted in IT infrastructure, DevSecOps, and platform security. Specializes in securing containerized environments through Kubernetes security controls, policy enforcement, and Infrastructure-as-Code automation. Strong advocate for secure-by-design workflows and CI/CD pipeline security. Builds security tooling in Python, with recent focus on AI-driven code analysis. CISSP and OSCP certified.",
   "workRights": "Based in Cyprus. Open to relocation to London. Require employer-sponsored visa.",
   "sectionLabels": {
     "profile": "Profile",
@@ -57,10 +57,9 @@
       "duties": [
         "Architect and deploy enterprise-wide security pipeline integrating SAST, SCA, and secrets scanning into CI/CD with automated findings ingestion and developer dashboards",
         "Engineer integrated vulnerability management system (DefectDojo + Python automation + Jira) consolidating findings from multiple scanners and automating remediation lifecycle",
-        "Develop AI-driven tools using Claude Code to examine codebases for business logic vulnerabilities and automate triage of security scanner findings",
-        "Conduct internal penetration testing and security assessments of web applications, APIs, and cloud infrastructure",
+        "Develop AI-driven tools to examine codebases for business logic vulnerabilities and automate triage of security scanner findings",
         "Perform security design reviews of software products and infrastructure architecture, advising engineering teams on risk mitigation",
-        "Provide security subject matter expertise to product teams throughout the SDLC, embedding security into design decisions"
+        "Administer corporate HSM instances (hardware and cloud-based) including cryptographic key migration from on-premises to cloud environment"
       ]
     },
     {
@@ -155,7 +154,7 @@
       "name": "MCSE: Cloud Platform and Infrastructure — Microsoft"
     },
     {
-      "date": "2021",
+      "date": "2018",
       "name": "Splunk Certified User — Splunk"
     }
   ]

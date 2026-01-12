@@ -173,7 +173,9 @@ Based on JD content, assign relevant tags:
 - `pentesting`, `red_team`, `blue_team`
 - `grc`, `security_leadership`
 
-Usually 1 primary + 1-3 secondary tags.
+Usually 1 primary + 1-3 secondary tags. If you feel that this set lack of relevant tag then:
+1) Highlight it in final report.
+2) Apply really relevant tag and match it with data in profile using smart thinking, not simple tag matching.
 
 ### STEP 5: Load Profile & Match
 
@@ -186,15 +188,17 @@ Usually 1 primary + 1-3 secondary tags.
    - Note match level (exact match, related, missing)
    - Prioritize skills with `highlight_for` tags matching position type
 
+   Note: tags are for making navigation more simple. Final mathing should occure based on overal inforamation in profile, and not be limited only by tags.
+
 2. **Experience Matching:**
    - For each `work_experience` entry, calculate relevance score based on:
      - `relevant_for` tags matching position type
      - Technologies used matching JD requirements
      - Recency (more recent = higher weight)
 
-3. **Summary Selection:**
-   - Choose appropriate `summary_blocks` based on position type
-   - May combine multiple blocks (e.g., `general` + `soc_focus`)
+3. **Summary generation:**
+   - Consider appropriate `summary_blocks` based on position type
+   - Do not simply copy-paste summary text. Instead, use existing texts as a reference but form final text considering necessary focus, tone and things that better to highlight for particular job position.
 
 4. **Calculate Match Score:**
    - Required skills coverage: X%
@@ -213,6 +217,8 @@ Apply all rules during generation.
 **Read:** `config/cv_schema.json`
 
 IMPORTANT: DO NOT generate CV data unless company_researcher agent doesn't complete it's task. Consider it's output when generating CV data.
+
+Note: profile yaml contains data about the candidate in form of structured document with a text. Do not blindly copy-paste all text from there. It's your responsobility to define final wording and sentence and make sure that it alligns with expected focus, tone and length. So, it's ok to copy-paste but only after explicit analysis and making сonscious decision.
 
 Generate `cv_data.json` following the exact schema structure.
 
@@ -278,7 +284,7 @@ Sincerely,
 - If `company_research_available`: Reference company values, mission, recent news
 - If NOT: Focus purely on role requirements and your qualifications
 - Keep it short (roughly 250 words)
-- Match tone to company culture if known (startup casual vs enterprise formal). In any way do not be like thouzands of others. Use creative and bright language and still gentle and polite.
+- Match tone to company culture if known (startup casual vs enterprise formal). Use clear and direct language. Be genuine, not clever.
 
 ### STEP 9: Generate Motivation Letter
 
@@ -475,6 +481,65 @@ Apply your own tags for non-security roles.
 5. **Explain decisions** — report should justify every choice
 6. **Handle failures gracefully** — always produce a report, even if partial
 7. **Match score is honest** — don't inflate to make user feel good
+
+---
+
+## Writing Style Principles
+
+### Core Rule: Clarity Over Impressiveness
+
+Prefer clear, direct language over sophisticated-sounding phrases. If a sentence can be interpreted multiple ways, rewrite it. The goal is to be understood, not to impress.
+
+### Anti-Patterns to Avoid
+
+| Bad (vague/marketing) | Good (clear/factual) |
+|-----------------------|----------------------|
+| "Building security into fast-moving cultures" | "Work with engineering teams on security architecture" |
+| "Bridging security requirements with execution" | "Translate security requirements into actionable tasks" |
+| "Advocate for automation-first security" | "Write Python scripts for security automation" |
+| "Enables rather than blocks" | Describe what you actually built |
+| "Reshaping how people interact with X" | State what company actually does, verified from materials |
+| "The ownership mindset you value" | Show ownership through examples, don't name it |
+
+### Verification Rule
+
+Before making claims about a company:
+1. Check if the claim is in the provided materials
+2. If not found, don't assume industry tropes apply
+3. Generic statements ("changing the world", "disrupting industry") are usually wrong
+
+### Show, Don't Name
+
+Don't parrot company values back at them. Instead:
+- Bad: "I share your ownership mindset"
+- Good: Describe a situation where you took ownership (let them recognize it)
+
+### Every Phrase Earns Its Place
+
+Before including any phrase, ask:
+1. What specific meaning does this add?
+2. Can I remove it without losing information?
+3. Would a normal person say this in conversation?
+
+If the answer to #3 is "no", rewrite it.
+
+### Context-Specific Guidelines
+
+| Medium | Style |
+|--------|-------|
+| **CV Summary** | Dense, factual, every word counts. No metaphors. |
+| **CV Bullets** | Action verb + what you did + result. Concrete. |
+| **Cover Letter** | Professional but human. Direct statements. |
+| **LinkedIn Message** | Conversational. Like talking to a person. Short sentences. |
+| **Motivation Letter** | Personal but not flowery. Genuine reasons. |
+
+### Audience Awareness
+
+Consider who will read this:
+- If both parties are non-native English speakers: use simpler constructions
+- Avoid idioms that might not translate well
+- Be direct rather than clever
+- Ask: would this sound natural if spoken aloud?
 
 ---
 

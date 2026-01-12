@@ -1,0 +1,132 @@
+{
+  "name": "Aleksandr Liukov",
+  "jobTitle": "Application Security Engineer",
+  "phone": "+375 97 888 176",
+  "email": "liukov.aleksandr91@gmail.com",
+  "linkedinUrl": "https://www.linkedin.com/in/aleksandr-liukov/?locale=en_US",
+  "profile": "Security engineer with 11 years of experience specializing in application security and secure SDLC integration. Architects enterprise security pipelines and vulnerability management systems, embedding security tooling into CI/CD workflows. Develops AI-driven tools for automated code analysis and vulnerability triage. OSCP certified with hands-on penetration testing experience; CISSP certified for broad security knowledge.",
+  "workRights": "Based in Cyprus. Open to relocation to US. Require visa sponsorship.",
+  "sectionLabels": {
+    "profile": "Profile",
+    "workRights": "Work Rights",
+    "coreSkills": "Core Skills &\nTechnologies",
+    "employment": "Employment History",
+    "education": "Education",
+    "certifications": "Certifications"
+  },
+  "skills": [
+    {
+      "title": "Application Security",
+      "description": "SSDLC, threat modeling, secure code review, SAST, SCA, DAST, OWASP ASVS, Burp Suite, OWASP ZAP, DefectDojo"
+    },
+    {
+      "title": "Security Architecture",
+      "description": "Defense-in-depth, zero-trust principles, STRIDE, MITRE ATT&CK, risk assessment, security design reviews"
+    },
+    {
+      "title": "Vulnerability Management",
+      "description": "Identification, prioritization, triage, remediation workflows, false-positive reduction, Qualys, Nessus"
+    },
+    {
+      "title": "Automation & Development",
+      "description": "Python, Bash, Ansible, Terraform, n8n, AI-driven security analysis, CI/CD pipeline integration"
+    },
+    {
+      "title": "Cloud & Container Security",
+      "description": "Kubernetes (Kyverno, Falco, Seccomp), Docker, AWS, CI/CD security hardening"
+    },
+    {
+      "title": "Security Operations",
+      "description": "SIEM (Splunk, Humio), log correlation, alert tuning, incident investigation, security monitoring"
+    }
+  ],
+  "employment": [
+    {
+      "dates": "Aug 2024 — Present",
+      "title": "Lead Product Security Engineer",
+      "company": "Unlimit",
+      "location": "Cyprus",
+      "duties": [
+        "Developed company-wide Product Security Requirements standard serving as foundation for non-functional security requirements across all products and internal services",
+        "Engineered integrated vulnerability management system (DefectDojo, Python automation, Jira) that consolidates findings from multiple scanners and automates the full findings lifecycle",
+        "Architect and deploy enterprise security pipeline integrating SAST, SCA, and secrets scanning into CI/CD with automated ingestion to DefectDojo and developer-facing dashboards",
+        "Develop AI-driven tools to examine codebases for business logic vulnerabilities and automate triage of security scanner findings",
+        "Conduct internal penetration testing of web applications, APIs, and infrastructure; identified high-critical vulnerabilities in company products and vendor banking software",
+        "Perform security design reviews and provide security subject matter expertise to product teams throughout the SDLC"
+      ]
+    },
+    {
+      "dates": "Apr 2023 — Aug 2024",
+      "title": "Information Security Architect",
+      "company": "Kaspersky Lab",
+      "location": "Russia",
+      "duties": [
+        "Defined and documented secure architecture principles for products and infrastructure",
+        "Evaluated product designs to identify security flaws and recommended remediation strategies",
+        "Developed and implemented Secure Software Development Lifecycle (SSDLC) processes",
+        "Conducted targeted penetration testing of applications and services, identifying critical vulnerabilities",
+        "Advised engineering teams on mitigating risks and embedding security into design decisions"
+      ]
+    },
+    {
+      "dates": "Sep 2021 — Apr 2023",
+      "title": "Senior Cyber Security Engineer",
+      "company": "TheSoul Publishing",
+      "location": "Cyprus",
+      "duties": [
+        "Automated and maintained security controls: SAST, DAST, and Infrastructure-as-Code deployments",
+        "Strengthened security of Kubernetes clusters and CI/CD pipelines",
+        "Developed secure remote access solution with automated access controls, routing, and monitoring",
+        "Managed SIEM, IDS, vulnerability scanners, and security alerting infrastructure"
+      ]
+    },
+    {
+      "dates": "Jan 2020 — Sep 2021",
+      "title": "Information Security Engineer",
+      "company": "Vkontakte",
+      "location": "Russia",
+      "duties": [
+        "Developed internal security tools and automation scripts (Python) to streamline operations and enforce security controls",
+        "Managed SIEM platform (Splunk), designed complex correlation queries transforming raw logs into actionable alerts",
+        "Designed and executed security awareness program including phishing simulations"
+      ]
+    },
+    {
+      "dates": "Aug 2018 — Jan 2020",
+      "title": "System Integration Specialist",
+      "company": "Positive Technologies",
+      "location": "Russia",
+      "duties": [
+        "Developed automated attack simulations to test and validate detection capabilities of cybersecurity solutions",
+        "Created automation scripts (Python, Bash) for repeatable deployment and configuration of security products"
+      ]
+    },
+    {
+      "dates": "Oct 2016 — Jul 2018",
+      "title": "Security Engineer / IT Engineer",
+      "company": "GDC (Fujitsu)",
+      "location": "Russia",
+      "duties": [
+        "Administered MFA solution and enterprise identity infrastructure (Active Directory); investigated security alerts using Splunk"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "year": "2014",
+      "institution": "Voronezh State Technical University",
+      "location": "Russia",
+      "degree": "Bachelor's Degree in Computer Systems & Networks (5-year Specialist program)"
+    }
+  ],
+  "certifications": [
+    {
+      "date": "2022",
+      "name": "CISSP (Certified Information Systems Security Professional) — (ISC)²"
+    },
+    {
+      "date": "2020",
+      "name": "OSCP (Offensive Security Certified Professional) — Offensive Security"
+    }
+  ]
+}

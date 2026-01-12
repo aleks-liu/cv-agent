@@ -56,10 +56,10 @@ skills:
   # ---------------------------------------------------------------------------
   # SECURITY DOMAINS
   # ---------------------------------------------------------------------------
-  security_domains:
+  domains:
     - name: "Security Architecture & Design"
       level: "advanced"
-      years: 0                # Fill in
+      years: 6                # Fill in
       keywords:
         - "Defense-in-depth"
         - "Zero-trust principles"
@@ -76,7 +76,7 @@ skills:
 
     - name: "Application Security"
       level: "advanced"
-      years: 0                # Fill in
+      years: 6                # Fill in
       keywords:
         - "SSDLC"
         - "SCA"
@@ -94,7 +94,7 @@ skills:
 
     - name: "Vulnerability Management"
       level: "advanced"
-      years: 0                # Fill in
+      years: 7                # Fill in
       keywords:
         - "Identification"
         - "Triage"
@@ -110,7 +110,7 @@ skills:
 
     - name: "Security Operations & Monitoring"
       level: "advanced"
-      years: 0                # Fill in
+      years: 4                # Fill in
       keywords:
         - "SIEM"
         - "Splunk"
@@ -130,7 +130,7 @@ skills:
 
     - name: "Penetration Testing"
       level: "intermediate"
-      years: 0                # Fill in
+      years: 4                # Fill in
       keywords:
         - "Web application testing"
         - "API testing"
@@ -143,7 +143,7 @@ skills:
 
     - name: "Cyber Security Risk"
       level: "advanced"
-      years: 0                # Fill in
+      years: 6                # Fill in
       keywords:
         - "Risk Assessment"
         - "Risk Mitigation"
@@ -161,15 +161,15 @@ skills:
     - name: "Python"
       category: "Programming"
       level: "advanced"
-      years: 0                # Fill in
+      years: 9                # Fill in
       context: "Security automation, tooling, scripts for security controls and workflows"
       services: []
       certifications: []
 
     - name: "Bash"
       category: "Programming"
-      level: "advanced"
-      years: 0                # Fill in
+      level: "intermediate"
+      years: 6                # Fill in
       context: "Automation scripts, system administration"
       services: []
       certifications: []
@@ -177,7 +177,7 @@ skills:
     - name: "PowerShell"
       category: "Programming"
       level: "intermediate"
-      years: 0                # Fill in
+      years: 4                # Fill in
       context: "Windows automation, Active Directory management"
       services: []
       certifications: []
@@ -190,18 +190,26 @@ skills:
       services: []
       certifications: []
 
+    - name: "n8n"
+      category: "IaC"
+      level: "Beginner"
+      years: 1                # Fill in
+      context: "Automated workflows defined as code"
+      services: ["n8n"]
+      certifications: []
+
     - name: "Terraform"
       category: "IaC"
-      level: "intermediate"
-      years: 0                # Fill in
+      level: "Beginner"
+      years: 2                # Fill in
       context: "Infrastructure as Code deployments"
       services: []
       certifications: []
 
     - name: "Ansible"
       category: "IaC"
-      level: "intermediate"
-      years: 0                # Fill in
+      level: "Advanced"
+      years: 5                # Fill in
       context: "Configuration management, automated deployments"
       services: []
       certifications: []
@@ -209,7 +217,7 @@ skills:
     - name: "Docker"
       category: "Container"
       level: "advanced"
-      years: 0                # Fill in
+      years: 6                # Fill in
       context: "Container security"
       services: []
       certifications: []
@@ -217,7 +225,7 @@ skills:
     - name: "Kubernetes"
       category: "Container"
       level: "advanced"
-      years: 0                # Fill in
+      years: 4                # Fill in
       context: "Container security, policy enforcement"
       services:
         - "Kyverno"
@@ -229,23 +237,23 @@ skills:
     - name: "AWS"
       category: "Cloud"
       level: "intermediate"
-      years: 0                # Fill in
+      years: 3                # Fill in
       context: "Cloud security"
       services: []            # Fill in specific services
       certifications: []
 
     - name: "Splunk"
       category: "SIEM"
-      level: "advanced"
-      years: 0                # Fill in
+      level: "intermediate"
+      years: 3                # Fill in
       context: "SIEM platform management, complex correlation queries, alert optimization"
       services: []
       certifications: ["Splunk Certified User"]
 
     - name: "Microsoft Azure"
       category: "Cloud"
-      level: "intermediate"
-      years: 0                # Fill in
+      level: "Beginner"
+      years: 1                # Fill in
       context: "Cloud infrastructure, Azure administration"
       services: []
       certifications: ["Implementing Microsoft Azure Infrastructure Solutions"]
@@ -253,7 +261,7 @@ skills:
     - name: "Humio/CrowdStrike"
       category: "SIEM"
       level: "advanced"
-      years: 0                # Fill in
+      years: 1                # Fill in
       context: "Log analytics, security monitoring"
       services: []
       certifications: []
@@ -295,11 +303,11 @@ skills:
         - "Group Policy"
       certifications: []
 
-    - name: "Claude Code/Gemini"
+    - name: "AI"
       category: "AI"
-      level: "advanced"
-      years: 0                # Fill in
-      context: "AI-assisted source code analysis, AI-driven security automation, MCP servers"
+      level: "intermediate"
+      years: 1                # Fill in
+      context: "Heavility use of AI to automate and optimize security activities. This includes: developed MCP server for retriving project-specific security requirements, automated tiage of vulnerability findings detected by traditional security scanners, examining programm source code for OWASP top 10 vulnerabilities."
       services: []
       certifications: []
 
@@ -334,6 +342,10 @@ work_experience:
     summary: |
       Leading product security engineering, building vulnerability management systems and security pipelines.
     achievements:
+      - text: "Developed company-wide internal security standard - 'Product Security Requirements'."
+        impact: "This document used as a base for non-functional requirements for all company products and internal services"
+        relevant_for: [appsec, devsecops, security_engineer, product_security]
+        technologies: []
       - text: "Engineer integrated vulnerability management system (DefectDojo + custom Python automation + Jira) that consolidates security findings from multiple scanners and automates findings lifecycle"
         impact: ""
         relevant_for: [appsec, devsecops, security_engineer]
@@ -347,7 +359,7 @@ work_experience:
         relevant_for: [devsecops, appsec, security_architect]
         technologies: [SAST, SCA, CI/CD, DefectDojo]
       - text: "Conduct internal application penetration testing and security assessments of web applications, APIs, and infrastructure"
-        impact: ""
+        impact: "Identified several high-critical vulnerabilities in company products. Identified high-critical vulnerability in vendor banking software (confirmed by vendor)."
         relevant_for: [pentesting, appsec]
         technologies: [Burp Suite, OWASP ZAP]
       - text: "Perform security design reviews of company software products and IT infrastructure architecture"
@@ -362,6 +374,10 @@ work_experience:
         impact: ""
         relevant_for: [appsec, product_security, security_architect]
         technologies: []
+      - text: "Administer corporate HSM (Hardware Security Module) instances presented both as a hardware instance and cloud service."
+        impact: "Conducted cryptographic key migration from on-prem environment to cloud HSM."
+        relevant_for: [security_engineer, security_architect]
+        technologies: ["HSM", "Cryptography", "Thales"]
     narrative: |
 
   - company: "Kaspersky Lab"
@@ -390,7 +406,7 @@ work_experience:
         relevant_for: [security_architect, appsec]
         technologies: []
       - text: "Conducted targeted penetration testing of applications and services"
-        impact: ""
+        impact: "Identified several critical vulnerabilities in company software products."
         relevant_for: [pentesting, appsec]
         technologies: []
       - text: "Developed and implemented Secure Software Development Lifecycle (SSDLC) processes"
@@ -428,10 +444,14 @@ work_experience:
         impact: ""
         relevant_for: [infrastructure, network_security]
         technologies: []
-      - text: "Managed SIEM, IDS, vulnerability scanners, and alerting"
+      - text: "Managed SIEM, IDS, vulnerability scanners, and alerting."
         impact: ""
         relevant_for: [soc, security_engineer]
         technologies: [SIEM]
+      - text: "Conducted comprehensive targeted Phishing compaign for education purposes."
+        impact: "A list of employees compromized their corporate credentials. This activity contributed heavility to corporate Security Awarness programme and helped to show employees how real phishing works and how important to be causios about digital messages."
+        relevant_for: [soc, security_engineer]
+        technologies: [gophish]
     narrative: |
 
   - company: "Vkontakte"
@@ -475,6 +495,14 @@ work_experience:
         impact: ""
         relevant_for: [soc, incident_response]
         technologies: [Splunk, Humio]
+      - text: "Conducted comprehensive targeted Phishing compaign for education purposes."
+        impact: "A list of employees compromized their corporate credentials. This activity contributed heavility to corporate Security Awarness programme and helped to show employees how real phishing works and how important to be causios about digital messages."
+        relevant_for: [soc, security_engineer]
+        technologies: [gophish]
+      - text: "Developed a content and conducted internal security webinars for all newcommers on a regular basis."
+        impact: "Contributed to Security Awareness by highlighting importance of security mindset for employees from their firts days in company."
+        relevant_for: [soc, security_engineer]
+        technologies: [gophish]
     narrative: |
       Extensive experience establishing monitoring infrastructure from ground up. Deployed log collection agents across corporate hosts, configured SIEM platforms and log processing pipelines. Developed sophisticated correlation queries that transformed high-volume raw log data into actionable security alerts.
 
@@ -705,7 +733,7 @@ certifications:
   - name: "Splunk Certified User"
     short_name: ""
     issuer: "Splunk"
-    year: 0                   # Fill in year
+    year: 2018                   # Fill in year
     expires: 0
     relevant_for:
       - soc

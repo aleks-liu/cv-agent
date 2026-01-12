@@ -145,7 +145,7 @@ Organized to match JD priorities:
 1. CISSP (2022) — Architecture/leadership credential
 2. OSCP (2020) — Hands-on technical depth
 3. MCSE: Cloud Platform and Infrastructure (2017) — Cloud relevance
-4. Splunk Certified User (2021) — Monitoring capability
+4. Splunk Certified User (2018) — Monitoring capability
 
 ### Items Excluded
 - Detailed descriptions of very old roles (2015-2016)
@@ -230,7 +230,7 @@ Organized to match JD priorities:
 | Type | Message | Resolution |
 |------|---------|------------|
 | None | No errors during generation | — |
-| Note | CV data Splunk cert date was empty | Fixed to 2021 |
+| Note | CV data Splunk cert date corrected | Fixed to 2018 |
 
 ---
 

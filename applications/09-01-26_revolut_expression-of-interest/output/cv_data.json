@@ -1,0 +1,146 @@
+{
+  "name": "Aleksandr Liukov",
+  "jobTitle": "Product Security Engineer",
+  "phone": "+357 97 888 176",
+  "email": "liukov.aleksandr91@gmail.com",
+  "linkedinUrl": "https://www.linkedin.com/in/aleksandr-liukov/?locale=en_US",
+  "profile": "Security engineer with 11 years experience, currently leading product security at a fintech payments company. Main focus: vulnerability management systems, security pipelines, penetration testing, threat modeling. Work with engineering teams on security architecture and design reviews. Background in infrastructure and system administration. Python for security tooling. OSCP and CISSP certified.",
+  "workRights": "Based in Cyprus. Open to relocation. Require employer-sponsored visa.",
+  "skills": [
+    {
+      "title": "Security Engineering",
+      "description": "Product Security, Vulnerability Management (DefectDojo, Qualys, Nessus), SSDLC, Security Architecture, Threat Modeling (STRIDE), Security Design Reviews, Risk Assessment"
+    },
+    {
+      "title": "Application Security",
+      "description": "SAST, SCA, DAST, Secrets Scanning, Penetration Testing, Web Application Security, API Security, Burp Suite, OWASP ZAP, OWASP ASVS"
+    },
+    {
+      "title": "Automation & Development",
+      "description": "Python (advanced), Bash, PowerShell, Ansible, Terraform, n8n, AI-driven Security Tooling"
+    },
+    {
+      "title": "Cloud & Containers",
+      "description": "Kubernetes (Kyverno, Falco, Seccomp), Docker, AWS, CI/CD Pipeline Security"
+    },
+    {
+      "title": "Cryptography & Identity",
+      "description": "HSM Administration (Thales), Key Management, Active Directory, MFA, IAM"
+    },
+    {
+      "title": "Security Operations",
+      "description": "SIEM (Splunk, Humio/CrowdStrike), Log Analytics (Logstash, winlogbeat, sysmon, osquery), Alert Correlation, Incident Investigation"
+    }
+  ],
+  "employment": [
+    {
+      "dates": "Aug 2024 — Present",
+      "title": "Lead Product Security Engineer",
+      "company": "Unlimit",
+      "location": "Cyprus",
+      "duties": [
+        "Architect and deploy enterprise-wide security pipeline integrating SAST, SCA, and secrets scanning into CI/CD with automated findings ingestion and developer-facing dashboards",
+        "Engineer integrated vulnerability management system (DefectDojo + Python automation + Jira) consolidating findings from multiple scanners and automating remediation workflows",
+        "Develop AI-driven tools to examine codebases for business logic vulnerabilities and automate triage of security scanner findings",
+        "Conduct penetration testing of web applications, APIs, and infrastructure — identified critical vulnerabilities in company products and third-party banking software",
+        "Administer corporate HSM instances (hardware and cloud), including cryptographic key migration between environments",
+        "Develop and enforce company-wide Product Security Requirements standard used as baseline for all products and internal services",
+        "Perform security design reviews and provide security expertise to product teams throughout the SDLC"
+      ]
+    },
+    {
+      "dates": "Apr 2023 — Aug 2024",
+      "title": "Information Security Architect",
+      "company": "Kaspersky Lab",
+      "location": "Russia",
+      "duties": [
+        "Defined and documented secure architecture principles for products and infrastructure across the organization",
+        "Evaluated product and system designs to identify security flaws and recommend remediation strategies",
+        "Conducted targeted penetration testing of applications and services, identifying critical vulnerabilities in company software",
+        "Developed and implemented Secure Software Development Lifecycle (SSDLC) processes",
+        "Advised engineering teams on embedding security into design decisions and mitigating architectural risks"
+      ]
+    },
+    {
+      "dates": "Sep 2021 — Apr 2023",
+      "title": "Senior Cyber Security Engineer",
+      "company": "TheSoul Publishing",
+      "location": "Cyprus",
+      "duties": [
+        "Strengthened security of Kubernetes clusters and CI/CD pipelines through policy enforcement and security controls",
+        "Automated and maintained security controls: SAST, DAST, and IaC-based deployments using Terraform and Ansible",
+        "Developed secure remote access solution for corporate infrastructure with automated access controls and monitoring",
+        "Managed SIEM, IDS, vulnerability scanners, and alerting infrastructure"
+      ]
+    },
+    {
+      "dates": "Jan 2020 — Sep 2021",
+      "title": "Information Security Engineer",
+      "company": "VKontakte",
+      "location": "Russia",
+      "duties": [
+        "Configured SIEM platforms (Splunk, Humio) and log processing pipelines (Logstash) for enterprise-wide security monitoring",
+        "Developed complex correlation queries transforming high-volume raw log data into actionable security alerts",
+        "Deployed log collection agents (winlogbeat, sysmon, osquery) across corporate infrastructure at scale",
+        "Managed SIEM platform with focus on alert optimization and false positive reduction",
+        "Developed internal security tools and automation scripts (Python) to streamline security operations"
+      ]
+    },
+    {
+      "dates": "Aug 2018 — Jan 2020",
+      "title": "System Integration Specialist",
+      "company": "Positive Technologies",
+      "location": "Russia",
+      "duties": [
+        "Developed automated attack simulations to test and validate detection capabilities of security solutions during integration projects",
+        "Deployed and configured security products across customer environments including OS hardening and network encryption appliances",
+        "Created automation scripts (Python, Bash) for repeatable installation and integration of security solutions"
+      ]
+    },
+    {
+      "dates": "Oct 2016 — Jul 2018",
+      "title": "Security Engineer / IT Engineer",
+      "company": "GDC (Fujitsu)",
+      "location": "Russia",
+      "duties": [
+        "Administered enterprise identity infrastructure (Active Directory, MFA, Microsoft Identity Manager) and managed access control lifecycle",
+        "Investigated security alerts using Splunk and endpoint protection systems"
+      ]
+    },
+    {
+      "dates": "Jan 2015 — Oct 2016",
+      "title": "System Administrator",
+      "company": "Atos IT Solutions",
+      "location": "Russia",
+      "duties": [
+        "Maintained enterprise Windows Server infrastructure and automated administrative tasks using PowerShell"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "year": "2014",
+      "institution": "Voronezh State Technical University",
+      "location": "Russia",
+      "degree": "Computer Systems & Networks — Bachelor's Degree (5-year Specialist program)"
+    }
+  ],
+  "certifications": [
+    {
+      "date": "2022",
+      "name": "CISSP (Certified Information Systems Security Professional) — (ISC)²"
+    },
+    {
+      "date": "2020",
+      "name": "OSCP (Offensive Security Certified Professional) — Offensive Security"
+    },
+    {
+      "date": "2018",
+      "name": "Splunk Certified User — Splunk"
+    },
+    {
+      "date": "2017",
+      "name": "MCSE: Cloud Platform and Infrastructure — Microsoft"
+    }
+  ]
+}

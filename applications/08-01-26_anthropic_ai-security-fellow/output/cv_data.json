@@ -1,0 +1,138 @@
+{
+  "name": "Aleksandr Liukov",
+  "jobTitle": "Security Engineer & Researcher",
+  "phone": "+375 97 888 176",
+  "email": "liukov.aleksandr91@gmail.com",
+  "linkedinUrl": "https://www.linkedin.com/in/aleksandr-liukov/?locale=en_US",
+  "profile": "Security engineer with 11 years of experience and strong Python proficiency spanning security automation, AI-driven vulnerability analysis, and offensive security. OSCP certified with hands-on penetration testing experience across web applications, APIs, and infrastructure. Develops AI-powered security tools including automated vulnerability triage systems and security requirements engines. Combines deep security expertise with practical AI application to research and mitigate complex security risks.",
+  "workRights": "Based in Cyprus. Open to relocation to US, UK, or Canada.",
+  "sectionLabels": {
+    "profile": "Profile",
+    "workRights": "Work Rights",
+    "coreSkills": "Core Skills &\nTechnologies",
+    "employment": "Employment History",
+    "education": "Education",
+    "certifications": "Certifications"
+  },
+  "skills": [
+    {
+      "title": "Programming & AI",
+      "description": "Python (9 years), AI/LLM tooling, MCP server development, security automation, Bash, PowerShell"
+    },
+    {
+      "title": "Security Research",
+      "description": "Penetration testing, vulnerability research, automated attack simulation, threat modeling, OSCP methodology"
+    },
+    {
+      "title": "Application Security",
+      "description": "SSDLC, code review, SAST/DAST, SCA, API security testing, Burp Suite, OWASP ZAP, DefectDojo"
+    },
+    {
+      "title": "Security Architecture",
+      "description": "Defense-in-depth, security design review, risk assessment, MITRE ATT&CK, zero-trust principles"
+    },
+    {
+      "title": "Infrastructure & Cloud",
+      "description": "Kubernetes security (Kyverno, Falco), Docker, CI/CD pipelines, AWS, SIEM (Splunk, Humio)"
+    }
+  ],
+  "employment": [
+    {
+      "dates": "Aug 2024 — Present",
+      "title": "Lead Product Security Engineer",
+      "company": "Unlimit",
+      "location": "Cyprus",
+      "duties": [
+        "Develop AI-driven tools to examine codebases for business logic vulnerabilities and automate triage of security scanner findings using Python and LLM integration",
+        "Conduct internal penetration testing of web applications, APIs, and infrastructure — identified high-critical vulnerability in vendor banking software confirmed by vendor",
+        "Architect enterprise-wide security pipeline integrating SAST, SCA, and secrets scanning with automated findings ingestion and developer-facing remediation dashboards",
+        "Engineer vulnerability management system (DefectDojo + Python automation + Jira) consolidating findings from multiple scanners with automated lifecycle management",
+        "Perform security design reviews and threat modeling for company software products and IT infrastructure"
+      ]
+    },
+    {
+      "dates": "Apr 2023 — Aug 2024",
+      "title": "Information Security Architect",
+      "company": "Kaspersky Lab",
+      "location": "Russia",
+      "duties": [
+        "Conducted targeted penetration testing of applications and services, identifying critical vulnerabilities in company products",
+        "Evaluated product and system designs to identify security flaws and recommended remediation strategies",
+        "Developed and implemented Secure Software Development Lifecycle (SSDLC) processes across engineering teams",
+        "Defined and documented secure architecture principles guiding product and infrastructure security decisions"
+      ]
+    },
+    {
+      "dates": "Sep 2021 — Apr 2023",
+      "title": "Senior Cyber Security Engineer",
+      "company": "TheSoul Publishing",
+      "location": "Cyprus",
+      "duties": [
+        "Automated security controls including SAST, DAST, and IaC-based deployments using Python and Ansible",
+        "Strengthened Kubernetes cluster security and CI/CD pipeline security controls",
+        "Managed SIEM, IDS, and vulnerability scanners with focus on detection optimization"
+      ]
+    },
+    {
+      "dates": "Jan 2020 — Sep 2021",
+      "title": "Information Security Engineer",
+      "company": "Vkontakte",
+      "location": "Russia",
+      "duties": [
+        "Developed internal security tools and automation scripts (Python) to streamline operations and enforce controls",
+        "Developed complex correlation queries transforming raw log data into actionable security alerts (Splunk, Humio)",
+        "Investigated security alerts through log analysis, identifying threats and tuning detection rules"
+      ]
+    },
+    {
+      "dates": "Aug 2018 — Jan 2020",
+      "title": "System Integration Specialist",
+      "company": "Positive Technologies",
+      "location": "Russia",
+      "duties": [
+        "Developed automated attack simulations (Python) to test and validate detection capabilities of cybersecurity solutions",
+        "Created automation scripts for repeatable installation and integration of security solutions across customer environments"
+      ]
+    },
+    {
+      "dates": "Nov 2016 — Jul 2018",
+      "title": "Security Engineer / IT Engineer",
+      "company": "GDC (Fujitsu preferred supplier)",
+      "location": "Russia",
+      "duties": [
+        "Administered enterprise identity infrastructure (Active Directory, MFA) and investigated security alerts using Splunk"
+      ]
+    },
+    {
+      "dates": "Jan 2015 — Oct 2016",
+      "title": "System Administrator",
+      "company": "Atos IT Solutions & Services",
+      "location": "Russia",
+      "duties": [
+        "Maintained enterprise Windows Server infrastructure with PowerShell automation and system monitoring"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "year": "2014",
+      "institution": "Voronezh State Technical University",
+      "location": "Voronezh, Russia",
+      "degree": "Computer Systems & Networks: Bachelor's Degree (5-year Specialist program)"
+    }
+  ],
+  "certifications": [
+    {
+      "date": "2020",
+      "name": "OSCP (Offensive Security Certified Professional)"
+    },
+    {
+      "date": "2022",
+      "name": "CISSP (Certified Information Systems Security Professional)"
+    },
+    {
+      "date": "2018",
+      "name": "Splunk Certified User"
+    }
+  ]
+}
